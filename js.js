@@ -21,7 +21,7 @@ for (let i = 0; i < images.length; i++){
 }
 
 function background(e){
-    task4.style.backgroundImage = 'url('+e.srcElement.currentSrc+')';
+    task4.style.backgroundImage = 'url('+e.target.getAttribute('data')+')';    
     task4.style.backgroundSize = 'contain';
 }
 
